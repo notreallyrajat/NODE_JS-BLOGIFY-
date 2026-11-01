@@ -1,0 +1,18 @@
+<nav class="navbar md:navbar-expand bg-1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    
+  <% if (user) { %>
+    <form action="/user/Logout" method="post">
+        <button type="submit">Logout</button>
+    </form>
+  <% } else { %>
+    <form action="/user/signin" method="get">
+        <button type="submit">Sign In</button>
+    </form>
+  <% } %>
+
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+    </dialog>
+  </div>
+</nav>
