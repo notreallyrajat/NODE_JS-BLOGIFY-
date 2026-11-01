@@ -24,7 +24,6 @@ function AuthenticationCookie(req,res,next){
     
     res.locals.user = user;
     req.user = user;
-    console.log(req);
     next()
  
 
